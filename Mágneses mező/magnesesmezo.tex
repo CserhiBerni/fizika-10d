@@ -1,0 +1,48 @@
+\documentclass [12pt,a4paper] {article}
+\usepackage [utf8] {inputenc}
+\usepackage [magyar] {babel}
+\usepackage [T1] {fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm] {geometry}
+\author{Gáspár Bernát}
+\title{Mágneses mező}
+
+\begin{document}
+\maketitle
+\section{Mágneses indukció}
+A mágneses indukció a mágneses tér erősségére jellemző vektormennyiség (mágneses indukció vektor)\newline
+Jele: \underline{B} \hspace{5mm} $[\underline{B}] = T$ (Tesla) \newline
+Nagysága függ: a vonalak sűrűségétől\newline
+Az iránya: a húzott érintő iránya\newline
+
+\section{Mágneses fluxus}
+A fluxus egy erőtérnek a felületén való áthatolását jellemzi \newline
+$\phi = \underline{B} \cdot A \rightarrow [\phi] = T \cdot m^2 = Wb$ (Weber) \newline
+valójában ez a képlet hiányos, mivel befolyásolja a fluxust a felület vonalakkal bezárt szöge \newline
+$\phi = \underline{B} \cdot A \cdot sin\alpha$ \newline
+Ha a felület derékszöget zár be a vonalakkal, akkor $\phi \rightarrow \underline{B} \angle A \rightarrow \phi = max$ \newline
+Ha a felület párhuzamos a vonalakkal, akkor $\underline{B} || A \rightarrow \phi = 0$
+
+\section{Forgatónyomaték}
+$\underline{M} = N \cdot A \cdot I \cdot \underline{B}$ (N $\rightarrow$ menetszám) \newline
+$\underline{M} = 0$, ha $\underline{B} \angle A \rightarrow (\phi max)$ \newline
+$\underline{M} = max$, ha $\underline{B} || A \rightarrow (\phi 0)$ \newline
+Így láthatjuk jól, hogy a fluxus pont ellentétes a menetszámmal
+
+\section{Egyenes vezető mágneses tere}
+$\underline{B} = \mu_0 \mu_r \dfrac{NI}{l}$ tekercs tere \newline
+A végtelen hosszú, egyenes vezető körül a mágneses indukció nagysága egyenesen arányos a vezetőben folyó áram erősségével, és fordítottan arányos a vezetőtől mért távolsággal: \newline
+$\underline{B} = \dfrac{I}{2r\pi} \mu_0$ hosszú egyenes vezető\newline
+$\mu_0 = 4\pi \cdot 10^-7 \dfrac{V_0}{A m}$ \newline
+Itt zárt koncentrikus körök vannak (azt jelenti, hogy azonos a középpontjuk, de más a sugaruk)
+
+\section{Mágneses megosztás}
+A ferromágneses anyagok vonzó képessége megoszlik a térben lévő ferromágneses anyagokkal. Például: több szög vonzza egymást, ha 1 szög mágneshez van érintve
+
+\section{Elektromágnes}
+Elektromágnes: az egyenáram hatása által vezetőben létrehozott mágneses mező. Az erőssége az áramerősséggel (A), a ferromágneses vasmag tulajdonságával (mű) illetve a menetszámmal szabályozható 
+
+\end{document}
+

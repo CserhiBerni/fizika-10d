@@ -1,0 +1,51 @@
+\documentclass [12pt,a4paper] {article}
+\usepackage [utf8] {inputenc}
+\usepackage [magyar] {babel}
+\usepackage [T1] {fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm] {geometry}
+\author{Gáspár Bernát}
+\title{Egyenáramok}
+
+\begin{document}
+\maketitle
+\section{Áramerősség}
+\underline{áram:} töltéshordozok egyirányú rendezett áramlása \newline
+\underline{feltétele:} a vezető két vége között potenciál különbség legyen (feszültség) \newline
+\underline{iránya:} pozitív töltések haladási iránya \newline\newline
+
+Áramerősség: $I = \dfrac{Q}{t} \hspace{10mm} [I] = \dfrac{C}{s} = a$ \newline\newline
+Az áramerősséget (I) jellemezhetjük a vezető teljes keresztmetszetén egységnyi idő alatt áthaladó összes töltés mennyiségével (Q) és az idő (t) hányadosaként. \newline
+Ha az áram iránya és erőssége állandó az időben, akkor I = áll. azaz egyenáram
+
+\section{Ohm-törvény}
+az áramerősség a vezeték két rögzített pontja között mérhető feszültséggel egyenesen arányos\newline\newline
+ezek alapján a törvény: $R = \dfrac{U}{I} \hspace{10mm} [R] = \dfrac{V}{A} = \Omega$ ahol R az adott vezetékszakaszra jellemző ellenállás \newline \newline
+ezen kívül számolhatunk ellenállást a keresztmetszet nagysága és egy adott vezetékhossz szakaszának ismeretében \newline\newline
+$R = \rho\dfrac{l}{A} {\hspace{10mm} \rho = \dfrac{RA}{l}}$ itt a $\rho$ egy arányossági tényező, \underline{fajlagos ellenállás}\newline
+az SI egysége: $\dfrac{\Omega mm^2}{m}$ azért nem $m^2$, mert az gyakorlatban túl nagy érték (vezeték keresztmetszetről van szó)\newline\newline
+Megjegyzés: a vezeték általában henger alakú szóval kör a keresztmetszete (A) és a kör területe pedig $r^2\pi$, ahol az r a sugár, aminek a kétszerese az átmérő, ez általában d
+
+\section{Soros kapcsolás}
+Az ellenállásokat sorban, elágazás nélkül kötjük be \newline
+$I = I_1 = I_2 = I_n$ töltésmegmaradás \newline
+$U_k = U_1 + U_2 + U_n$ \newline
+Eredő ellenállás: $R_e = \dfrac{U_k}{I} = \dfrac{U_1 + U_2 + U_n}{I} = R_1 + R_2 + R_n$
+
+\section{Párhuzamos kapcsolás}
+Az ellenállásokat párhuzamosan kapcsoljuk be egymáshoz képest \newline
+$I = I_1 + I_2 + I_n$ \newline
+$U_k = U_1 = U_2 = U_n$ \newline
+Eredő ellenállás: $R_e = \dfrac{U_k}{I} = \dfrac{U}{I_1 + I_2 + I_n} \rightarrow \dfrac{I_1 + I_2 + I_n}{U} = \dfrac{I_1}{U} + \dfrac{I_2}{U} + \dfrac{I_n}{U} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + \dfrac{1}{R_n} = \dfrac{1}{R_e}$
+
+\section{Elektromos munka és teljesítmény}
+Egymásból jól kifejezhetőek \newline
+$W = U\cdot I\cdot t \hspace{10mm} [W] = V\cdot A\cdot s = J$ \newline
+$P = U\cdot I \hspace{10mm} [P] = V\cdot A = W$(Watt, nem munka, de sajnos az is W, ugye mint az előző sorban) \newline
+Ezekből jól észrevehtő, hogy $W = P\cdot t$ \newline
+Esetleg felírhatjuk, hogy $P = \dfrac{W}{t} = \dfrac{U\cdot I\cdot t}{t} = U\cdot I$ szóval valóban visszakapjuk \newline
+A munka (W) lényegében megegyezik az energiával, legalábbis a mértékegysége, így a hőmérsékletes feladatoknál is használhatjuk a munkát
+
+\end{document}
